@@ -1,10 +1,12 @@
 import { RouteProps } from "react-router-dom";
-import { MainPage, NotFoundPage } from "pages";
-import { LoginPage } from "pages/LoginPage";
-import { DeliveryListPage } from "pages/DeliveryListPage";
-import { CreateDeliveryPage } from "pages/CreateDeliveryPage";
-import { EditDeliveryPage } from "pages/EditDeliveryPage";
-import { ReportPage } from "pages/ReportPage";
+import {
+  CreateDeliveryPage,
+  DeliveryListPage,
+  EditDeliveryPage,
+  LoginPage,
+  NotFoundPage,
+  ReportPage,
+} from "pages";
 
 export enum AppRoutes {
   LOGIN = "login",
@@ -29,22 +31,22 @@ export const RouteConfig: Record<AppRoutes, RouteProps> = {
     path: RoutePaths.login,
     element: <LoginPage />,
   },
-  
+
   [AppRoutes.DELIVERY_LIST]: {
     path: RoutePaths.delivery_list,
     element: <DeliveryListPage />,
   },
-  
+
   [AppRoutes.CREATE_DELIVERY]: {
     path: RoutePaths.create_delivery,
     element: <CreateDeliveryPage />,
   },
-  
+
   [AppRoutes.EDIT_DELIVERY]: {
     path: RoutePaths.edit_delivery,
     element: <EditDeliveryPage />,
   },
-  
+
   [AppRoutes.REPORT]: {
     path: RoutePaths.report,
     element: <ReportPage />,

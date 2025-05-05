@@ -31,7 +31,5 @@
     }
   },
   "include": ["./src/**/*.ts", "./src/**/*.tsx"],
-  "exclude": ["node_modules"],
-  "noUnusedLocals": false,
-  "noUnusedParameters": false
+  "exclude": ["node_modules"]
 }
