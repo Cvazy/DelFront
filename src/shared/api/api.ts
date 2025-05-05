@@ -61,7 +61,7 @@ const baseQueryWithReauth: BaseQueryFn<
 
         // Отправляем запрос на обновление токена
         const refreshResult = await fetch(
-          "http://localhost:8000/api/token/refresh/",
+          `${process.env.REACT_APP_SERVER_URL}/api/token/refresh/`,
           {
             method: "POST",
             headers: {
