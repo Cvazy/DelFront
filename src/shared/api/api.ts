@@ -17,7 +17,7 @@ const mutex = new Mutex();
  * Автоматически добавляет токен из localStorage в заголовок Authorization
  */
 const baseQuery = fetchBaseQuery({
-  baseUrl: "http://localhost:8000/api/",
+  baseUrl: `${process.env.REACT_APP_SERVER_URL}/api/`,
   credentials: "include", // Включаем куки в запросы
   prepareHeaders: (headers) => {
     const token = getAccessToken();
